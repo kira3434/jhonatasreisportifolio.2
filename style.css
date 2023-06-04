@@ -15,6 +15,26 @@ body{
 width: 60%;
 height: 100%;
 }
-.conteudo-imagem img{
-    margin-top: 10%;
+.conteudo-texto{
+    margin-left: 10%;
+    margin-top: 25%;
+}
+.conteudo-inicio h2,h1,p{
+    color: white;
+}
+.conteudo-inicio h2{
+    font-size: 20px;
+    line-height: 1px;
+    color: #3F9AA6;
+}
+.conteudo-inicio h1{
+    font-size: 100px;
+    line-height: 10px;
+}
+.conteudo-inicio p{
+    font-size: 18px;
+    max-width: 200px;
+    color: #9254CB;
+    margin-top: -20px;
+    margin-left: 60%;
 }
