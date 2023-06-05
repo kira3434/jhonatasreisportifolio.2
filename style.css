@@ -1,10 +1,10 @@
 body{
-    background-color: #1B1B3C;
+    background-color: #cfcfcf;
     margin: 0;
     padding: 0 10%;
 }
 
-
+/*começo da nav bar */
 nav {
     position: fixed;
     top: 0;
@@ -12,15 +12,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1B1B3C;
+    background-color: #cfcfcf;
     padding: 10px;
     margin: 0 auto;
   }
+
   
   .logo img {
     height: 50px;
     width: 50px;
   }
+  
   
   .nav-links li {
     display: inline-block;
@@ -29,17 +31,21 @@ nav {
   
   .nav-links li a {
     text-decoration: none;
-    color: #3F9AA6;
-    padding: 7px;
+    color: #857D72;
+    padding: 10px;
     font-size: 24px;
     transition: 1.0s;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   
   .nav-links li a:hover {
-    background-color: #9254CB;
-    color: #f2f2f2;
+    background-color: #44362C;
+    color: #857D72;
   }
+
+  /*fim  da nav bar */
+
+  /*começo do inicio */
 #inicio{
  width: 100%;
  height: 85vh;
@@ -54,7 +60,8 @@ height: 100%;
 position: relative;
 }
 .conteudo-texto{
-    margin-top: 15%;
+    margin-top: 20%;
+    position: absolute;
 }
 .conteudo-inicio h2,h1,p{
     color: white;
@@ -62,17 +69,17 @@ position: relative;
 .conteudo-inicio h2{
     font-size: 30px;
     line-height: 1px;
-    color: #3F9AA6;
+    color: #BE9957;
 }
 .conteudo-inicio h1{
     font-size: 120px;
-    color: #d8d8d8;
+    color: #181818;
     line-height: 10px;
 }
 .conteudo-inicio p{
     font-size: 18px;
     max-width: 200px;
-    color: #9254CB;
+    color: #857D72;
     margin-top: -20px;
     margin-left: 70%;
 }
@@ -80,8 +87,8 @@ position: relative;
     width: 340px;
     height: 80px;
     position: absolute;
-    right: -70px;
-    top: 180px;
+    right: -10%;
+    top: 100px;
     display: flex;
     animation: fade-in 5s ease-in-out forwards;
     
@@ -95,13 +102,40 @@ position: relative;
 }
 
 .icone img {
-    filter: invert(56%) sepia(28%) saturate(811%) hue-rotate(139deg) brightness(90%) contrast(86%);
+  filter: invert(20%) sepia(1%) saturate(6795%) hue-rotate(337deg) brightness(112%) contrast(101%);
 }
 
 .icone img:hover {
-    filter: invert(42%) sepia(79%) saturate(592%) hue-rotate(230deg) brightness(83%) contrast(91%);
+  filter: invert(85%) sepia(26%) saturate(81%) hue-rotate(3deg) brightness(100%) contrast(86%);
 }
 
 .conteudo-imagem img{
-    margin-top: 5%;
+    margin-top: 10%;
+}
+
+/*fim do inicio */
+
+@media screen and (max-width: 769px){
+.conteudo-texto{
+  margin-top: 400px;
+justify-content: space-evenly;
+}
+.conteudo-texto h2{
+font-size: 20px;
+}
+.conteudo-texto h1{
+  font-size: 90px;
+
+}
+.conteudo-texto p{
+  margin-left: 0;
+}
+.conteudo-imagem{
+  width: 250px;
+  margin-top: 300px;
+}
+.icon{
+  top: 190px;
+  right: -10px;
+}
 }
