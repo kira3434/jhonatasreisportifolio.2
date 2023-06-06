@@ -1,6 +1,6 @@
 body{
   background: rgb(119,119,119);
-  background: linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(254,250,250,1) 100%);
+  background: linear-gradient(0deg, rgba(119,119,119,1) 0%, #fefafa 100%);
     margin: 0;
     padding: 0;
 }
@@ -126,26 +126,83 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(254,250,250);
+  background: linear-gradient(0deg, rgba(254,250,250,1) 0%, rgba(184,182,182,1) 100%);
+  display: flex;
 }
 
 #caixa-sobre{
-  width: 100%;
-  height: 100%;
-  background-color: #B8B6B6;
+  width: 80%;
+  height: 80%;
   display: flex;
-
 }
-.sobre-imagem{
+.sobre-imagens{
   width: 50%;
   height: 100%;
- 
 }
-
 .sobre-texto{
-  width: 50%;
-  height: 100%;
-
+ margin: 5%;
 }
+.sobre-texto h1{
+  color: #7b6351;
+}
+.sobre-texto h2{
+  color: #616161;
+}
+
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #181818;
+  text-transform: uppercase;
+  position: relative;
+  transition: .5s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #2f2f2f;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: .5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+.btn a{
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
 
 
 /*fim do inicio */
